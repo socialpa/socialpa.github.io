@@ -1,3 +1,88 @@
+@-webkit-keyframes tiltHead {
+    0% {-webkit-transform: rotate(5deg);transform: rotate(5deg);}
+   50% {-webkit-transform: rotate(-5deg);transform: rotate(-5deg);}
+  100% {-webkit-transform: rotate(5deg);transform: rotate(5deg);}
+}
+
+@keyframes tiltHead {
+    0% {-webkit-transform: rotate(5deg);transform: rotate(5deg);}
+   50% {-webkit-transform: rotate(-5deg);transform: rotate(-5deg);}
+  100% {-webkit-transform: rotate(5deg);transform: rotate(5deg);}
+}
+
+@-webkit-keyframes moveDevice {
+    0% {-webkit-transform: rotate3d(1, 0, 0,  0deg);transform: rotate3d(1, 0, 0,  0deg)}
+   50% {-webkit-transform: rotate3d(1, 0, 0, 45deg);transform: rotate3d(1, 0, 0, -35deg)}
+  100% {-webkit-transform: rotate3d(1, 0, 0,  0deg);transform: rotate3d(1, 0, 0,  0deg)}
+}
+
+@keyframes moveDevice {
+    0% {-webkit-transform: rotate3d(1, 0, 0,  0deg);transform: rotate3d(1, 0, 0,  0deg)}
+   50% {-webkit-transform: rotate3d(1, 0, 0, 45deg);transform: rotate3d(1, 0, 0, -35deg)}
+  100% {-webkit-transform: rotate3d(1, 0, 0,  0deg);transform: rotate3d(1, 0, 0,  0deg)}
+}
+
+@-webkit-keyframes openLaptop {
+    0% {-webkit-transform: rotate3d(1, 0, 0, 0deg);transform: rotate3d(1, 0, 0, 0deg);}
+   50% {-webkit-transform: rotate3d(1, 0, 0, -25deg);transform: rotate3d(1, 0, 0, -25deg);}
+  100% {-webkit-transform: rotate3d(1, 0, 0, 0deg);transform: rotate3d(1, 0, 0, 0deg);}
+}
+
+@keyframes openLaptop {
+    0% {-webkit-transform: rotate3d(1, 0, 0, 0deg);transform: rotate3d(1, 0, 0, 0deg);}
+   50% {-webkit-transform: rotate3d(1, 0, 0, -25deg);transform: rotate3d(1, 0, 0, -25deg);}
+  100% {-webkit-transform: rotate3d(1, 0, 0, 0deg);transform: rotate3d(1, 0, 0, 0deg);}
+}
+
+@-webkit-keyframes blinkEyes {
+    0% {-webkit-transform: rotate3d(1, 0, 0, 0deg);transform: rotate3d(1, 0, 0, 0deg);}
+   96% {-webkit-transform: rotate3d(1, 0, 0, 0deg);transform: rotate3d(1, 0, 0, 0deg);}
+   98% {-webkit-transform: rotate3d(1, 0, 0, 90deg);transform: rotate3d(1, 0, 0, 90deg);}
+  100% {-webkit-transform: rotate3d(1, 0, 0, 0deg);transform: rotate3d(1, 0, 0, 0deg);}
+}
+
+@keyframes blinkEyes {
+    0% {-webkit-transform: rotate3d(1, 0, 0, 0deg);transform: rotate3d(1, 0, 0, 0deg);}
+   96% {-webkit-transform: rotate3d(1, 0, 0, 0deg);transform: rotate3d(1, 0, 0, 0deg);}
+   98% {-webkit-transform: rotate3d(1, 0, 0, 90deg);transform: rotate3d(1, 0, 0, 90deg);}
+  100% {-webkit-transform: rotate3d(1, 0, 0, 0deg);transform: rotate3d(1, 0, 0, 0deg);}
+}
+
+.how-it-works .head {
+  -webkit-animation: tiltHead 12s cubic-bezier(.62,.28,.23,.99) infinite;
+  animation: tiltHead 12s cubic-bezier(.62,.28,.23,.99) infinite;
+  -webkit-transform-origin: center 100px;
+  transform-origin: center 100px;
+}
+
+.how-it-works.step-1 .computer {
+  -webkit-animation: openLaptop 7.5s cubic-bezier(.62,.28,.23,.99) infinite;
+  animation: openLaptop 7.5s cubic-bezier(.62,.28,.23,.99) infinite;
+  -webkit-transform-origin: center 194px;
+  transform-origin: center 194px;
+}
+
+.how-it-works.step-2 .arms,
+.how-it-works.step-3 .arm-l {
+  -webkit-animation: moveDevice 7.5s cubic-bezier(.62,.28,.23,.99) infinite;
+  animation: moveDevice 7.5s cubic-bezier(.62,.28,.23,.99) infinite;
+  -webkit-transform-origin: center 122px;
+  transform-origin: center 122px;
+}
+
+.how-it-works .eyes {
+  -webkit-animation: blinkEyes 6s cubic-bezier(.62,.28,.23,.99) infinite;
+  animation: blinkEyes 6s cubic-bezier(.62,.28,.23,.99) infinite;
+  -webkit-transform-origin: center 78px;
+  transform-origin: center 78px;
+}
+
+svg {
+  width: 30%;
+  max-width: 400px;
+  height: auto;
+  max-height: 100%;
+}
 <section id="contact">
     <div class="container">
         <div class="row">
